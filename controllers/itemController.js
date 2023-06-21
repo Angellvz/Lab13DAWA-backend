@@ -30,6 +30,8 @@ exports.getItemById = (req, res) => {
       const newItem = new Item({
       name: req.body.name,
       description: req.body.description,
+      valoracion: req.body.valoracion,
+      date_estreno: req.body.date_estreno,
       // Otros campos que desees para tu modelo
       });
       newItem.save()
